@@ -1,0 +1,54 @@
+Year,Quarter,Product Model,5G Capability,Units Sold,Revenue ($),Market Share (%),Regional 5G Coverage (%),5G Subscribers (millions),Avg 5G Speed (Mbps),Preference for 5G (%),Region,Market Segment,Support_Priority,Predicted_Retention_Months
+2021,Q1,Galaxy S22 5G,Yes,42025,46339655.03,4.66,82.85,36.11,176.96,71.11,North America,Premium (S-Series),Standard,36
+2021,Q2,Galaxy S22 5G,Yes,27446,66537700.6,5.890000000000001,93.07,25.38,199.61,89.51,North America,Premium (S-Series),Standard,36
+2021,Q3,Galaxy Z Flip3 5G,Yes,8281,15827206.45,2.87,97.24,49.02,297.81,77.33,North America,Ultra-Premium (Foldables),Critical (High Complexity),24
+2022,Q1,Galaxy A14 5G,Yes,27735,60038350.75,6.4,42.86,50.44,118.36,80.72,North America,Budget (A1x),High (Volume Traffic),36
+2022,Q2,Galaxy Z Fold3 5G,Yes,53719,15328592.42,3.88,79.25,36.07,286.49,48.06,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2022,Q3,Galaxy A14 5G,Yes,55853,6813706.73,4.88,62.85,33.760000000000005,63.15,69.85,North America,Budget (A1x),High (Volume Traffic),36
+2022,Q4,Galaxy Z Fold3 5G,Yes,22829,33124655.16,6.4,70.69,26.25,125.31,93.2,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q1,Galaxy S22 5G,Yes,25428,41184238.58,4.9,78.09,24.18,262.01,54.8,North America,Premium (S-Series),Standard,36
+2023,Q2,Galaxy Z Fold2 5G,Yes,14004,7989841.62,3.37,86.05,18.51,249.43,45.62,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q3,Galaxy S22 5G,Yes,11176,41387013.97,6.52,59.53,7.359999999999999,246.52,46.97,North America,Premium (S-Series),Standard,36
+2023,Q3,Galaxy Z Fold3 5G,Yes,35816,11652906.14,6.83,52.51,23.96,85.44,54.57,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q4,Galaxy Z Fold3 5G,Yes,56470,29368072.66,5.15,71.88,21.15,192.3,46.87,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q4,Galaxy A14 5G,Yes,50544,43782286.43,4.640000000000001,96.7,13.78,184.26,51.56,North America,Budget (A1x),High (Volume Traffic),36
+2024,Q1,Galaxy Z Flip5 5G,Yes,24624,36547057.85,6.92,54.55,50.77,120.07,50.72,North America,Ultra-Premium (Foldables),Critical (High Complexity),24
+2024,Q2,Galaxy Z Fold2 5G,Yes,47712,18117011.06,3.62,64.38,33.69,172.94,72.78,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2024,Q2,Galaxy A14 5G,Yes,7463,54322194.79,3.42,84.33,29.05,82.85,88.18,North America,Budget (A1x),Standard,36
+2024,Q3,Galaxy Z Flip3 5G,Yes,35291,49226395.4,6.75,62.89,24.49,220.65,89.72,North America,Ultra-Premium (Foldables),Critical (High Complexity),24
+2024,Q3,Galaxy Z Fold3 5G,Yes,43568,7815666.25,5.04,74.46,45.39,255.35,72.28,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2024,Q3,Galaxy S23 5G,Yes,15763,7376208.85,5.890000000000001,74.46,50.36,173.23,52.39,North America,Premium (S-Series),Standard,36
+2024,Q4,Galaxy Z Fold3 5G,Yes,31313,33616387.43,6.7,59.12,51.35,229.94,66.1,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2024,Q4,Galaxy S23 5G,Yes,27459,48297091.18,2.65,73.66,17.95,186.37,92.94,North America,Premium (S-Series),Standard,36
+2021,Q1,Galaxy S22 5G,Yes,42025,46339655.03,4.66,82.85,36.11,176.96,71.11,North America,Premium (S-Series),Standard,36
+2021,Q2,Galaxy S22 5G,Yes,27446,66537700.6,5.890000000000001,93.07,25.38,199.61,89.51,North America,Premium (S-Series),Standard,36
+2021,Q3,Galaxy Z Flip3 5G,Yes,8281,15827206.45,2.87,97.24,49.02,297.81,77.33,North America,Ultra-Premium (Foldables),Critical (High Complexity),24
+2022,Q1,Galaxy A14 5G,Yes,27735,60038350.75,6.4,42.86,50.44,118.36,80.72,North America,Budget (A1x),High (Volume Traffic),36
+2022,Q2,Galaxy Z Fold3 5G,Yes,53719,15328592.42,3.88,79.25,36.07,286.49,48.06,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2022,Q3,Galaxy A14 5G,Yes,55853,6813706.73,4.88,62.85,33.760000000000005,63.15,69.85,North America,Budget (A1x),High (Volume Traffic),36
+2022,Q4,Galaxy Z Fold3 5G,Yes,22829,33124655.16,6.4,70.69,26.25,125.31,93.2,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q1,Galaxy S22 5G,Yes,25428,41184238.58,4.9,78.09,24.18,262.01,54.8,North America,Premium (S-Series),Standard,36
+2023,Q2,Galaxy Z Fold2 5G,Yes,14004,7989841.62,3.37,86.05,18.51,249.43,45.62,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q3,Galaxy S22 5G,Yes,11176,41387013.97,6.52,59.53,7.359999999999999,246.52,46.97,North America,Premium (S-Series),Standard,36
+2023,Q3,Galaxy Z Fold3 5G,Yes,35816,11652906.14,6.83,52.51,23.96,85.44,54.57,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q4,Galaxy Z Fold3 5G,Yes,56470,29368072.66,5.15,71.88,21.15,192.3,46.87,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q4,Galaxy A14 5G,Yes,50544,43782286.43,4.640000000000001,96.7,13.78,184.26,51.56,North America,Budget (A1x),High (Volume Traffic),36
+2024,Q1,Galaxy Z Flip5 5G,Yes,24624,36547057.85,6.92,54.55,50.77,120.07,50.72,North America,Ultra-Premium (Foldables),Critical (High Complexity),24
+2024,Q2,Galaxy Z Fold2 5G,Yes,47712,18117011.06,3.62,64.38,33.69,172.94,72.78,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2024,Q2,Galaxy A14 5G,Yes,7463,54322194.79,3.42,84.33,29.05,82.85,88.18,North America,Budget (A1x),Standard,36
+2024,Q3,Galaxy Z Flip3 5G,Yes,35291,49226395.4,6.75,62.89,24.49,220.65,89.72,North America,Ultra-Premium (Foldables),Critical (High Complexity),24
+2024,Q3,Galaxy Z Fold3 5G,Yes,43568,7815666.25,5.04,74.46,45.39,255.35,72.28,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2024,Q3,Galaxy S23 5G,Yes,15763,7376208.85,5.890000000000001,74.46,50.36,173.23,52.39,North America,Premium (S-Series),Standard,36
+2024,Q4,Galaxy Z Fold3 5G,Yes,31313,33616387.43,6.7,59.12,51.35,229.94,66.1,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2024,Q4,Galaxy S23 5G,Yes,27459,48297091.18,2.65,73.66,17.95,186.37,92.94,North America,Premium (S-Series),Standard,36
+2021,Q2,Galaxy S22 5G,Yes,27446,66537700.6,5.890000000000001,93.07,25.38,199.61,89.51,North America,Premium (S-Series),Standard,36
+2024,Q4,Galaxy S23 5G,Yes,27459,48297091.18,2.65,73.66,17.95,186.37,92.94,North America,Premium (S-Series),Standard,36
+2022,Q4,Galaxy Z Fold3 5G,Yes,22829,33124655.16,6.4,70.69,26.25,125.31,93.2,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q3,Galaxy Z Fold3 5G,Yes,35816,11652906.14,6.83,52.51,23.96,85.44,54.57,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2023,Q1,Galaxy S22 5G,Yes,25428,41184238.58,4.9,78.09,24.18,262.01,54.8,North America,Premium (S-Series),Standard,36
+2024,Q3,Galaxy Z Flip3 5G,Yes,35291,49226395.4,6.75,62.89,24.49,220.65,89.72,North America,Ultra-Premium (Foldables),Critical (High Complexity),24
+2023,Q3,Galaxy Z Fold3 5G,Yes,35816,11652906.14,6.83,52.51,23.96,85.44,54.57,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2024,Q2,Galaxy A14 5G,Yes,7463,54322194.79,3.42,84.33,29.05,82.85,88.18,North America,Budget (A1x),Standard,36
+2023,Q3,Galaxy Z Fold3 5G,Yes,35816,11652906.14,6.83,52.51,23.96,85.44,54.57,North America,Ultra-Premium (Foldables),Critical (High Complexity),36
+2021,Q1,Galaxy S22 5G,Yes,42025,46339655.03,4.66,82.85,36.11,176.96,71.11,North America,Premium (S-Series),Standard,36
+2024,Q3,Galaxy S23 5G,Yes,15763,7376208.85,5.890000000000001,74.46,50.36,173.23,52.39,North America,Premium (S-Series),Standard,36

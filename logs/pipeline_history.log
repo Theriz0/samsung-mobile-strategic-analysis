@@ -1,0 +1,117 @@
+[2026-04-21 16:39:18] [INFO] Manual test of the logging system
+[2026-04-21 16:41:46] [INFO] Manual test of the logging system
+[2026-04-21 17:28:13] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 17:28:13] [INFO] Longevity prediction finalized.
+[2026-04-21 17:34:37] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 17:34:37] [WARNING] SKIPPED: setup_env.py not found at scripts\setup_env.py
+[2026-04-21 17:34:38] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 17:34:38] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 17:34:38] [INFO] Longevity prediction finalized.
+[2026-04-21 17:34:38] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 17:34:38] [WARNING] SKIPPED: create_dashboard.py not found at scripts\create_dashboard.py
+[2026-04-21 17:34:38] [INFO] PIPELINE FINISHED. Success rate: 2/4
+[2026-04-21 17:39:30] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 17:39:30] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-04-21 17:39:31] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 17:39:31] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 17:39:31] [INFO] Longevity prediction finalized.
+[2026-04-21 17:39:31] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 17:39:35] [ERROR] FAILED: samsung_dashboard.py crashed. Error: C:\data\Analysis\scripts\samsung_dashboard.py:26: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(ax=axes[0, 0], data=df, x='Market Segment', y='Units Sold', estimator=sum, palette='viridis', errorbar=None)
+C:\data\Analysis\scripts\samsung_dashboard.py:42: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(ax=axes[1, 1], data=top_models, x='Revenue ($)', y='Product Model', palette='magma')
+Traceback (most recent call last):
+  File "C:\data\Analysis\scripts\samsung_dashboard.py", line 51, in <module>
+    generate_dashboard()
+  File "C:\data\Analysis\scripts\samsung_dashboard.py", line 48, in generate_dashboard
+    print(f"\u2705 Executive Dashboard generated: {OUTPUT_IMAGE}")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+[2026-04-21 17:39:35] [INFO] PIPELINE FINISHED. Success rate: 3/4
+[2026-04-21 17:45:18] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 17:45:18] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-04-21 17:45:18] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 17:45:19] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 17:45:19] [INFO] Longevity prediction finalized.
+[2026-04-21 17:45:19] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 17:45:21] [INFO] SUCCESS: samsung_dashboard.py executed successfully.
+[2026-04-21 17:45:21] [INFO] PIPELINE FINISHED. Success rate: 4/4
+[2026-04-21 17:47:42] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 17:47:42] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-04-21 17:47:43] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 17:47:43] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 17:47:43] [INFO] Longevity prediction finalized.
+[2026-04-21 17:47:43] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 17:47:45] [INFO] SUCCESS: samsung_dashboard.py executed successfully.
+[2026-04-21 17:47:45] [INFO] PIPELINE FINISHED. Success rate: 4/4
+[2026-04-21 18:01:53] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 18:01:53] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-04-21 18:01:53] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 18:01:54] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 18:01:54] [INFO] Longevity prediction finalized.
+[2026-04-21 18:01:54] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 18:01:56] [INFO] SUCCESS: samsung_dashboard.py executed successfully.
+[2026-04-21 18:01:56] [INFO] PIPELINE FINISHED. Success rate: 4/4
+[2026-04-21 19:50:37] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 19:50:37] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-04-21 19:50:38] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 19:50:38] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 19:50:38] [INFO] Longevity prediction finalized.
+[2026-04-21 19:50:38] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 19:50:40] [INFO] SUCCESS: samsung_dashboard.py executed successfully.
+[2026-04-21 19:50:40] [INFO] PIPELINE FINISHED. Success rate: 4/4
+[2026-04-21 19:53:14] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 19:53:14] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-04-21 19:53:14] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 19:53:15] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 19:53:15] [INFO] Longevity prediction finalized.
+[2026-04-21 19:53:15] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 19:53:17] [INFO] SUCCESS: samsung_dashboard.py executed successfully.
+[2026-04-21 19:53:17] [INFO] PIPELINE FINISHED. Success rate: 4/4
+[2026-04-21 19:53:40] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 19:53:40] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-04-21 19:53:41] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 19:53:41] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 19:53:41] [INFO] Longevity prediction finalized.
+[2026-04-21 19:53:41] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 19:53:43] [INFO] SUCCESS: samsung_dashboard.py executed successfully.
+[2026-04-21 19:53:43] [INFO] PIPELINE FINISHED. Success rate: 4/4
+[2026-04-21 19:57:59] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-04-21 19:57:59] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-04-21 19:58:00] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-04-21 19:58:00] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-04-21 19:58:00] [INFO] Longevity prediction finalized.
+[2026-04-21 19:58:00] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-04-21 19:58:02] [INFO] SUCCESS: samsung_dashboard.py executed successfully.
+[2026-04-21 19:58:02] [INFO] PIPELINE FINISHED. Success rate: 4/4
+[2026-05-05 19:37:05] [INFO] --- STARTING FULL PIPELINE EXECUTION ---
+[2026-05-05 19:37:05] [INFO] SUCCESS: env_setup.py executed successfully.
+[2026-05-05 19:37:14] [INFO] SUCCESS: sales_strategy.py executed successfully.
+[2026-05-05 19:37:15] [INFO] Starting Sentiment-Based Longevity Prediction.
+[2026-05-05 19:37:15] [INFO] Longevity prediction finalized.
+[2026-05-05 19:37:15] [INFO] SUCCESS: phone_longetivity.py executed successfully.
+[2026-05-05 19:37:21] [INFO] SUCCESS: samsung_dashboard.py executed successfully.
+[2026-05-05 19:37:21] [INFO] PIPELINE FINISHED. Success rate: 4/4
+[2026-05-05 19:52:14] [INFO] ERROR: Pipeline failed - 'Model'
+[2026-05-05 19:54:01] [INFO] ERROR: Pipeline failed - 'Model'
+[2026-05-05 19:56:07] [INFO] ERROR: Pipeline failed - "Could not find a 'Model' column in CSV"
+[2026-05-05 19:57:58] [INFO] ERROR: Pipeline failed - "Could not find a Model column. Available: ['Year', 'Quarter', 'Product Model', '5G Capability', 'Units Sold', 'Revenue ($)', 'Market Share (%)', 'Regional 5G Coverage (%)', '5G Subscribers (millions)', 'Avg 5G Speed (Mbps)', 'Preference for 5G (%)', 'Region']"
+[2026-05-05 20:00:04] [INFO] ERROR: Pipeline failed - "Could not find a 'Model' column. Available: ['Year', 'Quarter', 'Product Model', '5G Capability', 'Units Sold', 'Revenue ($)', 'Market Share (%)', 'Regional 5G Coverage (%)', '5G Subscribers (millions)', 'Avg 5G Speed (Mbps)', 'Preference for 5G (%)', 'Region']"
+[2026-05-05 20:08:12] [INFO] ERROR: Pipeline failed - "Could not find a 'Model' column. Available: ['Year', 'Quarter', 'Product Model', '5G Capability', 'Units Sold', 'Revenue ($)', 'Market Share (%)', 'Regional 5G Coverage (%)', '5G Subscribers (millions)', 'Avg 5G Speed (Mbps)', 'Preference for 5G (%)', 'Region']"
+[2026-05-05 20:12:08] [INFO] ERROR: Pipeline failed - "Could not find a 'Model' column. Available: ['Year', 'Quarter', 'Product Model', '5G Capability', 'Units Sold', 'Revenue ($)', 'Market Share (%)', 'Regional 5G Coverage (%)', '5G Subscribers (millions)', 'Avg 5G Speed (Mbps)', 'Preference for 5G (%)', 'Region']"
+[2026-05-05 20:14:27] [INFO] ERROR: Pipeline failed - "Could not find a 'Model' column. Available: ['Year', 'Quarter', 'Product Model', '5G Capability', 'Units Sold', 'Revenue ($)', 'Market Share (%)', 'Regional 5G Coverage (%)', '5G Subscribers (millions)', 'Avg 5G Speed (Mbps)', 'Preference for 5G (%)', 'Region']"
+[2026-05-06 12:17:51] [INFO] ERROR: Pipeline failed - "Could not find a 'Model' column. Available: ['Year', 'Quarter', 'Product Model', '5G Capability', 'Units Sold', 'Revenue ($)', 'Market Share (%)', 'Regional 5G Coverage (%)', '5G Subscribers (millions)', 'Avg 5G Speed (Mbps)', 'Preference for 5G (%)', 'Region']"
+[2026-05-06 12:18:28] [INFO] SUCCESS: Pipeline completed successfully.
+[2026-05-06 12:18:56] [INFO] SUCCESS: Pipeline completed successfully.
+[2026-05-06 12:23:56] [INFO] SUCCESS: Pipeline completed successfully.
+[2026-05-06 12:45:42] [INFO] SUCCESS: Pipeline completed successfully.
+[2026-05-06 12:49:17] [INFO] SUCCESS: Pipeline completed successfully.
