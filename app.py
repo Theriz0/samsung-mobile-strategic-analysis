@@ -1,10 +1,15 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import os
 from scripts.analytics import run_sales_strategy, calculate_efficiency_score, forecast_retention
 from scripts.error_logger import log_event
+
+# Import modular tab functions
+from scripts.overview import render_overview
+from scripts.market_analysis import render_market_analysis
+from scripts.quarterly_trends import render_quarterly_trends
+from scripts.product_strategy import render_product_strategy
+from scripts.ai_assistant import render_ai_assistant
 
 st.set_page_config(
     page_title="Samsung Market Intelligence Dashboard",
@@ -79,165 +84,30 @@ def main():
         filtered_df = filtered_df[filtered_df['Market Segment'] == segment]
 
     # -----------------------
-    # TABS (TABLEAU STYLE)
+    # TABS
     # -----------------------
-    tab1, tab2, tab3, tab4 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "Overview",
         "Market Analysis",
         "Quarterly Trends",
-        "Product Strategy"
+        "Product Strategy",
+        "AI Assistant"
     ])
 
-    # =========================
-    # TAB 1: OVERVIEW
-    # =========================
     with tab1:
-        st.subheader("Executive Overview")
+        render_overview(filtered_df)
 
-        col1, col2, col3 = st.columns(3)
-
-        col1.metric("Total Records", len(filtered_df))
-        col2.metric("Top Segment", filtered_df['Market Segment'].mode()[0])
-        col3.metric("Focus Market", "North America")
-
-        st.markdown("---")
-
-        fig, ax = plt.subplots(1, 2, figsize=(14, 6))
-
-        sns.countplot(
-            data=filtered_df,
-            x='Market Segment',
-            order=filtered_df['Market Segment'].value_counts().index,
-            ax=ax[0]
-        )
-        ax[0].set_title("Segment Distribution")
-        ax[0].tick_params(axis='x', rotation=30)
-
-        sns.scatterplot(
-            data=filtered_df,
-            x='Revenue ($)',
-            y='Units Sold',
-            hue='Market Segment',
-            ax=ax[1]
-        )
-        ax[1].set_title("Revenue vs Units Sold")
-
-        st.pyplot(fig)
-
-    # =========================
-    # TAB 2: MARKET ANALYSIS
-    # =========================
     with tab2:
-        st.subheader("Market Performance")
+        render_market_analysis(filtered_df)
 
-        fig, ax = plt.subplots(figsize=(10, 6))
-
-        sns.boxplot(
-            data=filtered_df,
-            x='Market Segment',
-            y='Revenue ($)',
-            ax=ax
-        )
-        ax.set_title("Revenue Distribution by Segment")
-        ax.tick_params(axis='x', rotation=30)
-
-        st.pyplot(fig)
-
-        st.markdown("### Top Performing Models")
-
-        top_models = filtered_df.sort_values(
-            by='Revenue ($)', ascending=False
-        ).head(10)
-
-        st.dataframe(top_models)
-
-    # =========================
-    # TAB 3: QUARTERLY TRENDS
-    # =========================
     with tab3:
-        st.subheader("Quarterly Performance Trends")
-        
-        if 'Year' in filtered_df.columns and 'Quarter' in filtered_df.columns:
-            trend_df = filtered_df.copy()
-            trend_df['Period'] = trend_df['Year'].astype(str) + " " + trend_df['Quarter']
-            # Sort by Year and Quarter ensuring chronological order
-            trend_df = trend_df.sort_values(by=['Year', 'Quarter'])
-            
-            fig, ax = plt.subplots(2, 1, figsize=(14, 12))
-            
-            # Quarterly Revenue by Market Segment
-            sns.lineplot(
-                data=trend_df,
-                x='Period',
-                y='Revenue ($)',
-                hue='Market Segment',
-                marker='o',
-                errorbar=None,
-                ax=ax[0]
-            )
-            ax[0].set_title("Quarterly Revenue by Market Segment")
-            ax[0].set_ylabel("Revenue ($)")
-            ax[0].tick_params(axis='x', rotation=45)
-            
-            # Quarterly Units Sold by Market Segment
-            sns.lineplot(
-                data=trend_df,
-                x='Period',
-                y='Units Sold',
-                hue='Market Segment',
-                marker='o',
-                errorbar=None,
-                ax=ax[1]
-            )
-            ax[1].set_title("Quarterly Units Sold by Market Segment")
-            ax[1].set_ylabel("Units Sold")
-            ax[1].tick_params(axis='x', rotation=45)
-            
-            plt.tight_layout()
-            st.pyplot(fig)
-        else:
-            st.info("Year and Quarter data is not available for trend analysis.")
+        render_quarterly_trends(filtered_df)
 
-    # =========================
-    # TAB 4: PRODUCT STRATEGY
-    # =========================
     with tab4:
-        st.subheader("Product Strategy View")
+        render_product_strategy(filtered_df)
 
-        if filtered_df.empty:
-            st.info("No data available.")
-        else:
-            col1, col2 = st.columns(2)
-
-            # Flagship
-            flagship = filtered_df[filtered_df['Market Segment'] == 'S-Series (Flagship)']
-            fig1, ax1 = plt.subplots(figsize=(6, 4))
-
-            sns.barplot(
-                data=flagship,
-                x='Product Model',
-                y='Revenue ($)',
-                ax=ax1
-            )
-            ax1.set_title("Flagship Revenue")
-            ax1.tick_params(axis='x', rotation=45)
-
-            col1.pyplot(fig1)
-
-            # A-Series
-            budget = filtered_df[filtered_df['Market Segment'] == 'A-Series (Budget)']
-            fig2, ax2 = plt.subplots(figsize=(6, 4))
-
-            sns.barplot(
-                data=budget,
-                x='Product Model',
-                y='Units Sold',
-                ax=ax2
-            )
-            ax2.set_title("A-Series Units Sold")
-            ax2.tick_params(axis='x', rotation=45)
-
-            col2.pyplot(fig2)
+    with tab5:
+        render_ai_assistant(filtered_df)
 
     # -----------------------
     # DATA TABLE
